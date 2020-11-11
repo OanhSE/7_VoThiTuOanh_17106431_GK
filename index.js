@@ -18,10 +18,11 @@ app.get('/index', async(req,res)=>{
     res.render('index', {Datatbl: item.data});
 });
 var awsconfig={
-    'region': 'us-east-1' ,
-    'accessKeyId': 'AKIAIBSJBQDKUQDIK2QA',
-    'secretAccessKey': '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'
+    'region': '' ,
+    'accessKeyId': '',
+    'secretAccessKey': ''
 }
+
 aws.config.update(awsconfig);
 const DynamoDB = new aws.DynamoDB.DocumentClient();
   
